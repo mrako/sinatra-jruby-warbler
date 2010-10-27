@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + '/../spec_helper'
 
 require 'init'
 
-describe "printers" do
+describe "printer controller" do
   include Rack::Test::Methods
 
   def app

@@ -6,5 +6,6 @@ RSpec::Core::RakeTask.new(:spec) do |t|
 end
 
 RSpec::Core::RakeTask.new(:rcov) do |t|
-  t.rcov_opts =  %q[--exclude "spec"]
+  t.rcov = true
+  t.rcov_opts =  %q[--include "app" --exclude "spec"]
 end

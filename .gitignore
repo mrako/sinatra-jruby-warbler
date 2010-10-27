@@ -1,4 +1,6 @@
 .classpath
 .project
 Gemfile.lock
-java/build/
+java/build
+.bundle
+coverage
