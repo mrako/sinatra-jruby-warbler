@@ -8,5 +8,4 @@ gem "json"
 group :test, :development do
   gem "rack-test"
   gem "rspec"
-  gem "rcov"
 end

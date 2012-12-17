@@ -5,11 +5,6 @@ RSpec::Core::RakeTask.new(:spec) do |t|
   t.pattern = 'spec/**/*_spec.rb'
 end
 
-RSpec::Core::RakeTask.new(:rcov) do |t|
-  t.rcov = true
-  t.rcov_opts =  %q[--include "app" --exclude "spec"]
-end
-
 namespace :war do
   task :compile do
     sh "cd java; ant"
